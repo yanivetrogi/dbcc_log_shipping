@@ -1,0 +1,77 @@
+{
+	"use_default_credentials":"false",
+	"user":"yaniv.etrogi@gmail.com",
+	"password":"MyPassword",
+    "to":"yaniv.etrogi@gmail.com",
+	"from":"yaniv.etrogi@gmail.com",
+	"smtp_server":"smtp.gmail.com",
+	"port":"25",
+	"ssl":"false",
+	
+	"threshold_faild_jobs_duration_minutes":"15",
+	"threshold_pending_disk_io_count":"2",
+	
+	"threshold_memory_pressure_count":"1",
+	"threshold_memory_pressure_duration_minutes":"5",
+	
+	"threshold_active_users_session_count":"100",
+	"threshold_active_users_session_duration_minutes":"2",
+	
+	"threshold_threshold_work_queue_count":"0",	
+	"threshold_tlog_percent_used":"70",
+	"threshold_cpu_usage_pecent":"30",
+	"threshold_disk_free_space_percent":"5",
+	
+	"eventlog_application_source":"MSSQLSERVER",
+	"eventlog_minutes":"15",
+	"eventlog_system_ids_exclude":
+	[
+		10016,
+		10028,
+		10030,
+		36888, 
+		36874
+	],
+
+	   "metricspath":
+        [	 
+			"\\Processor(_Total)\\% Processor Time"
+            ,"\\System\\Processor Queue Length"
+			
+			,"\\PhysicalDisk(*)\\Avg. Disk Sec/Write"
+			,"\\PhysicalDisk(*)\\Disk Read Bytes/sec"
+			,"\\PhysicalDisk(*)\\Disk Write Bytes/sec"
+			,"\\PhysicalDisk(*)\\Current Disk Queue Length"
+			,"\\PhysicalDisk(*)\\Disk Reads/sec"
+			,"\\PhysicalDisk(*)\\Disk Writes/sec"
+			
+			,"\\SQLServer:Databases(*)\\Log File(s) Used Size (KB)"
+			,"\\SQLServer:Databases(*)\\Percent Log Used"
+			,"\\SQLServer:Databases(*)\\Data File(s) Size (KB)"
+			
+			,"\\LogicalDisk(*)\\% Free Space"
+			,"\\LogicalDisk(*)\\Free Megabytes"
+			
+			,"\\SQLServer:Memory Manager\\Memory Grants Pending"
+			,"\\SQLServer:Memory Manager\\Target Server Memory (KB)"
+			,"\\SQLServer:Memory Manager\\Total Server Memory (KB)"	
+
+			,"\\SQLServer:Buffer Manager\\Page life expectancy"	
+			,"\\SQLServer:Buffer Manager\\Lazy Writes/Sec"
+			,"\\SQLServer:Buffer Manager\\Checkpoint pages/sec"
+
+		],
+	
+	"slack_token":"xoxp-552113839683-715063650887-725536726336-6d8b23fbe0f2b64db96e33b4266c18ba",
+	
+	"servers":
+	[
+		"YANIV"	
+	],
+	
+	"services":
+	[
+		"MSSQLSERVER",
+		"SQLSERVERAGENT"
+	]
+}
