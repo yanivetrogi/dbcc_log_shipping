@@ -2,8 +2,8 @@
 	"use_default_credentials":"false",
 	"user":"yaniv.etrogi@gmail.com",
 	"password":"MyPassword",
-    "to":"yaniv.etrogi@gmail.com",
-	"from":"yaniv.etrogi@gmail.com",
+    "to":"someone@gmail.com",
+	"from":"someone@gmail.com",
 	"smtp_server":"smtp.gmail.com",
 	"port":"25",
 	"ssl":"false",
@@ -62,7 +62,7 @@
 
 		],
 	
-	"slack_token":"xoxp-552113839683-715063650887-725536726336-6d8b23fbe0f2b64db96e33b4266c18ba",
+	"slack_token":"",
 	
 	"servers":
 	[
